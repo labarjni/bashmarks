@@ -51,6 +51,8 @@ $ f webfolder index.html
 $ c webfolder style.css script.js
 $ sync webfolder
 $ b locallib
+```
+
 ## Where Bashmarks are stored
     
 All of your directory bookmarks are saved in a file called ".sdirs" in your HOME directory.
