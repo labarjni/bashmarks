@@ -9,4 +9,5 @@ install:
 	cp bashmarks.sh $(INSTALL_DIR)
 	@echo ""
 	@echo "Please add 'source $(INSTALL_DIR)/bashmarks.sh' to your .bashrc file"
+
 .PHONY: all install
