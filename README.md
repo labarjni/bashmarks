@@ -5,8 +5,33 @@
 1. `git clone https://github.com/huyng/bashmarks.git`
 2. `cd bashmarks`
 3. `make install`
-4. source **~/.local/bin/bashmarks.sh** from within your **~.bash\_profile** or **~/.bashrc** file
-5. you can now remove the downloaded `bashmarks` folder which is no longer needed
+4. Open the `.bashrc` file
+```bash
+nano ~/.bashrc
+```
+
+### Add bashmarks autoload code
+Add the following block to the end of the file:
+
+```bash
+# Load bashmarks automatically in every session
+if [ -f ~/.local/bin/bashmarks.sh ]; then
+    source ~/.local/bin/bashmarks.sh
+    echo "bashmarks loaded successfully"
+fi
+```
+### Save the file
+
+```Nano: Press Ctrl + X, then Y, then Enter```
+
+```Vim: Press Esc, type :wq, press Enter```
+
+### Apply changes
+```bash
+source ~/.bashrc
+```
+
+6. you can now remove the downloaded `bashmarks` folder which is no longer needed
 
 ## Shell Commands
 
